@@ -2,11 +2,18 @@
 {% block content %}
 
 <section style="margin-bottom: 40px;">
-  <h1>Andrea Lucchesi</h1>
-  <p class="lead">
-    Laureato magistrale in <strong>Corporate Finance</strong>. Supporto decisioni aziendali con analisi finanziaria,
-    valutazione d’impresa e un approccio data-driven.
-  </p>
+  <div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-bottom: 20px;">
+    <img src="{{ url_for('static', filename='images/foto_profilo.jpg') }}" 
+         alt="Andrea Lucchesi" 
+         style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid var(--acc);">
+    <div>
+      <h1 style="margin: 0 0 8px;">Andrea Lucchesi</h1>
+      <p class="lead" style="margin: 0;">
+        Laureato magistrale in <strong>Corporate Finance</strong>. Supporto decisioni aziendali con analisi finanziaria,
+        valutazione d'impresa e un approccio data-driven.
+      </p>
+    </div>
+  </div>
   <p class="muted" style="max-width: 860px;">
     Obiettivo: ruolo <strong>Junior Corporate Finance Analyst</strong> in una realtà strutturata, con standard elevati e
     opportunità di crescita.
