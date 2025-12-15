@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<section style="max-width: 900px;">
+  <h1>Competenze & CV</h1>
+
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 18px;">
+    <div class="card">
+      <strong>Corporate Finance</strong>
+      <p style="margin-top:8px;">Valutazione (DCF, WACC, multipli), analisi di scenario e interpretazione dei driver di valore.</p>
+    </div>
+    <div class="card">
+      <strong>Financial Analysis</strong>
+      <p style="margin-top:8px;">Analisi bilancio e KPI, performance tracking, reporting a supporto delle decisioni.</p>
+    </div>
+    <div class="card">
+      <strong>Data & Tools</strong>
+      <p style="margin-top:8px;">Excel avanzato e analisi dati in R. Attenzione a pulizia dati e robustezza dei risultati.</p>
+    </div>
+    <div class="card">
+      <strong>ESG & Sustainable Finance</strong>
+      <p style="margin-top:8px;">Quadro europeo e impatti su disclosure, credibilità e performance d'impresa.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top: 18px;">
+    <strong>Download</strong>
+    <p style="margin-top:8px;">CV e materiali accademici disponibili in PDF.</p>
+
+    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:12px;">
+      <a class="btn primary" href="{{ url_for('static', filename='CV_Andrea_Lucchesi.pdf') }}">Scarica il CV</a>
+      <a class="btn" href="{{ url_for('static', filename='tesi_magistrale_greenwashing.pdf') }}">Scarica la tesi</a>
+      <a class="btn" href="{{ url_for('static', filename='presentazione_tesi_AL.pptx') }}">Scarica la presentazione</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
+

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Contatti</h1>
+  <p>Compila il form per contattarmi.</p>
+
+  <form method="post" style="max-width: 500px; margin-top: 20px;">
+    <div style="margin-bottom: 16px;">
+      <label style="display: block; margin-bottom: 6px; font-weight: 600;">Nome</label>
+      <input name="nome" placeholder="Il tuo nome" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.05); color: var(--txt);">
+    </div>
+
+    <div style="margin-bottom: 16px;">
+      <label style="display: block; margin-bottom: 6px; font-weight: 600;">Email</label>
+      <input name="email" type="email" placeholder="nome@email.com" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.05); color: var(--txt);">
+    </div>
+
+    <div style="margin-bottom: 16px;">
+      <label style="display: block; margin-bottom: 6px; font-weight: 600;">Messaggio</label>
+      <textarea name="messaggio" rows="5" placeholder="Scrivi qui..." required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.05); color: var(--txt); font-family: inherit;"></textarea>
+    </div>
+
+    <button type="submit" style="padding: 12px 24px; border-radius: 8px; border: 0; background: var(--acc); color: #06121b; font-weight: 700; cursor: pointer;">Invia</button>
+  </form>
+{% endblock %}

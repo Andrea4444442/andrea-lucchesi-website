@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+
+<p style="color:red; font-weight:700;">SE VEDI QUESTA SCRITTA = STAI MODIFICANDO IL FILE GIUSTO</p>
+
+<section style="margin-bottom: 40px;">
+    <h1>Andrea Lucchesi — TEST123</h1>
+  <p class="lead">
+    Laureato magistrale in <strong>Corporate Finance</strong>. Supporto decisioni aziendali con analisi finanziaria,
+    valutazione d’impresa e un approccio data-driven.
+  </p>
+  <p class="muted" style="max-width: 860px;">
+    Obiettivo: ruolo <strong>Junior Corporate Finance Analyst</strong> in una realtà strutturata, con standard elevati e
+    opportunità di crescita.
+  </p>
+
+  <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:16px;">
+    <a class="btn primary" href="{{ url_for('contatti') }}">Contattami</a>
+    <a class="btn" href="https://www.linkedin.com/in/andrea-lucchesi-" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="{{ url_for('static', filename='CV_Andrea_Lucchesi.pdf') }}">Scarica CV</a>
+  </div>
+</section>
+
+<section style="margin-bottom: 40px;">
+  <h2>In cosa sono forte</h2>
+  <div class="grid">
+    <div class="card">
+      <strong>Analisi finanziaria</strong>
+      <p class="muted">Lettura bilancio, KPI e reporting a supporto del management.</p>
+    </div>
+    <div class="card">
+      <strong>Valutazione d’impresa</strong>
+      <p class="muted">DCF, WACC, multipli, scenari e sensitivity analysis.</p>
+    </div>
+    <div class="card">
+      <strong>ESG & performance</strong>
+      <p class="muted">Comprensione del legame tra disclosure, credibilità e performance.</p>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Tesi magistrale</h2>
+  <p class="muted">
+    <strong>Disallineamento tra politiche e pratiche ambientali</strong>:
+    implicazioni sulla performance finanziaria e di sostenibilità delle imprese europee nel medio periodo.
+  </p>
+  <p class="muted" style="margin-top:10px;">
+    Analisi su imprese europee quotate con approccio quantitativo (panel data) e indicatori di disallineamento tra
+    comunicazione e pratiche ambientali (greenwashing/brownwashing).
+  </p>
+</section>
+
+{% endblock %}
+
